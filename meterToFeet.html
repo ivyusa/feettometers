@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Chuyển đổi giữa feet và meters</title>
+</head>
+<body>
+<form>
+    <script>
+        let value = prompt("Please enter meter to feet (m to f) or feet to meter (f to m)", "Not case sensitive");
+        let getvalue= value.toLowerCase();
+
+        function metertofeet(meter1) {
+           // let answer ;
+            feet1 = 3.279 * meter1;
+            return ;
+        }
+        function feettometer(feet2) {
+          //  let answer ;
+            let meter2 ;
+            meter2 = 0.305 * feet2;
+            return meter2 ;
+        }
+
+        switch (getvalue) {
+            case "m to f":
+                let themeter = prompt("Please enter the degrees in meter ", " ") ;
+                metertofeet(themeter);
+                answer = feet1 ;
+                alert(themeter + "m is " + answer + "ft");
+                break;
+            case "f to m":
+                let thefeet= prompt("Please enter the degrees in feet", " ");
+                let result = feettometer(thefeet);
+                alert(thefeet + "ft is " + result + "m") ;
+                break;
+            default:
+                document.write("Please reload the page as there was an error");
+                break;
+        }
+    </script>
+</form>
+</body>
+</html>
